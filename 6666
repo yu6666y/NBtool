@@ -1,5 +1,5 @@
 [RULE]
-
+# 66666
 # 去广告
 DOMAIN-SUFFIX,yximgs.com,REJECT
 DOMAIN-SUFFIX,adkwai.com,REJECT
