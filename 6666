@@ -1,5 +1,15 @@
 [RULE]
-# 66666
+# 牛逼助手屏蔽更新
+IP-CIDR,117.72.39.157/32,REJECT
+IP-CIDR,47.243.71.210/32,REJECT
+IP-CIDR,117.72.39.0/24,REJECT,no-resolve
+IP-CIDR,47.243.71.0/24,REJECT,no-resolve
+URL-REGEX,"^http://.+/nb/app",REJECT
+URL-REGEX,"^http://.+/nb/telnet",REJECT
+URL-REGEX,"^http://\d+\.\d+\.\d+\.\d+:\d+/nb/\w+",REJECT
+IP-CIDR,117.72.39.0/24,REJECT,no-resolve
+IP-CIDR,47.243.71.0/24,REJECT,no-resolve
+DOMAIN,media-sxty-fy-home01.sx3oss.ctyunxs.cn,REJECT
 # 去广告
 DOMAIN-SUFFIX,yximgs.com,REJECT
 DOMAIN-SUFFIX,adkwai.com,REJECT
