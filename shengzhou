@@ -1,8 +1,10 @@
-#!name=神州租车
-#!desc=每周二/三/四上午11点抢券
+// zuche.js
+let body = JSON.parse($response.body);
 
-[Body Rewrite]
-http-response-jq "^https:\/\/mktm\.zuche\.com\/api\/gw\.do\?uri=\/action\/carrctapi\/cardesconf\/getRoundTime\/v1" ".content |= (.isSameDay = true | .activityStatus = 0)"
+// 修改字段
+if (body && body.content) {
+  body.content.isSameDay = true;
+  body.content.activityStatus = 0;
+}
 
-[MITM]
-hostname= %APPEND% mktm.zuche.com
+$done({ body: JSON.stringify(body) });
