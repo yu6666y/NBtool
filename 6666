@@ -27,7 +27,6 @@ DOMAIN,oss.cdn.adintl.cn,REJECT
 DOMAIN,p66-ad.adkwai.com,REJECT
 DOMAIN,static-dsp.8ziben.com,REJECT
 DOMAIN,v66-ad.ndcjl.com,REJECT
-DOMAIN,ccflbs.m.jd.com,REJECT
 DOMAIN,download.cloud.189.cn,REJECT
 DOMAIN,httpdnsmultiapivip.meituan.com,REJECT
 DOMAIN,dnspod.meituan.httpdns.qcloud.com,REJECT
@@ -54,8 +53,6 @@ DOMAIN,prod.didi.cn,REJECT
 DOMAIN,conf.diditaxi.com.cn,REJECT
 DOMAIN,omgup.xiaojukeji.com,REJECT
 DOMAIN,v.adintl.cn,REJECT
-DOMAIN,sgm-m.jd.com,REJECT
-DOMAIN,mars.jd.com,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN,storage.360buyimg.com,REJECT
 DOMAIN,api-dsp.8ziben.com,REJECT
