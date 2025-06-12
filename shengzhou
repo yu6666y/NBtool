@@ -1,0 +1,8 @@
+#!name=神州租车
+#!desc=每周二/三/四上午11点抢券
+
+[Body Rewrite]
+http-response-jq "^https:\/\/mktm\.zuche\.com\/api\/gw\.do\?uri=\/action\/carrctapi\/cardesconf\/getRoundTime\/v1" ".content |= (.isSameDay = true | .activityStatus = 0)"
+
+[MITM]
+hostname= %APPEND% mktm.zuche.com
